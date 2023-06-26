@@ -72,7 +72,7 @@ model Listing {
   //? Relation With account
 
   user        User          @relation(fields: [userId], references: [id], onDelete: Cascade)
-  reservation Reservation[]
+  reservations Reservation[]
 }
 
 model Reservation {
